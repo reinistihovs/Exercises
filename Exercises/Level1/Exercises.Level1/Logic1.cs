@@ -19,7 +19,15 @@ namespace Exercises.Level1
         /// </summary>
         public bool CigarParty(int cigars, bool isWeekend)
         {
-            throw new NotImplementedException();
+            // throw new NotImplementedException();
+            if (cigars >= 40 && (cigars <= 60 || isWeekend))
+            {
+                return true;
+            }
+            else 
+            {
+                return false;
+            }
         }
 
         /// <summary>
@@ -36,7 +44,15 @@ namespace Exercises.Level1
         /// </summary>
         public int DateFashion(int you, int date)
         {
-            throw new NotImplementedException();
+            if (you <= 2 || date <= 2) {
+                return 0;
+            }
+            if (you >= 8 || date >= 8)
+            {
+                return 2;
+            }
+            return 1;
+
         }
 
         /// <summary>
@@ -51,7 +67,17 @@ namespace Exercises.Level1
         /// </summary>
         public bool SquirrelPlay(int temp, bool isSummer)
         {
-            throw new NotImplementedException();
+            if (!isSummer && temp >= 60 && temp <= 90)
+            {
+                return true;
+            }
+            if (isSummer && temp >= 60 && temp <= 100)
+            {
+                return true;
+            }
+            return false;
+
+
         }
 
         /// <summary>
@@ -67,7 +93,24 @@ namespace Exercises.Level1
         /// </summary>
         public int CaughtSpeeding(int speed, bool isBirthday)
         {
-            throw new NotImplementedException();
+        // If birthday, lower speed by 5
+            if (isBirthday)
+            {
+                speed -= 5;
+            }
+
+            if (speed < 61)
+            {
+                return 0;
+            }
+            else if (speed >= 61 && speed <= 80)
+            {
+                return 1;
+            }
+            else
+            {
+                return 2;
+            }
         }
 
         /// <summary>
@@ -80,7 +123,12 @@ namespace Exercises.Level1
         /// </summary>
         public int SortaSum(int a, int b)
         {
-            throw new NotImplementedException();
+            if (a + b >= 10 && a + b <= 19)
+            {
+                return 20;
+            }
+            
+            return a + b;
         }
 
         /// <summary>
@@ -96,7 +144,28 @@ namespace Exercises.Level1
         /// </summary>
         public string AlarmClock(int day, bool vacation)
         {
-            throw new NotImplementedException();
+
+            if (vacation)
+            {
+                if (day >= 1 && day <= 5)
+                {
+                    return "10:00";
+                }
+                else
+                {
+                    return "off";
+                }
+            }
+            if (day >= 1 && day <= 5)
+            {
+                return "7:00";
+            }
+            else
+            {
+                return "10:00";
+            }
+
+
         }
 
         /// <summary>
@@ -110,7 +179,11 @@ namespace Exercises.Level1
         /// </summary>
         public bool Love6(int a, int b)
         {
-            throw new NotImplementedException();
+            if (a == 6 || b == 6 || a + b == 6 || a - Math.Abs(b) == 6 || Math.Abs(b) - Math.Abs(a) == 6)
+            {
+                return true;
+            }
+            return false;
         }
 
         /// <summary>
@@ -124,7 +197,25 @@ namespace Exercises.Level1
         /// </summary>
         public bool In1To10(int n, bool outsideMode)
         {
-            throw new NotImplementedException();
+            if (outsideMode)
+            {
+                if (n <= 1 || n >= 10)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            if (n >= 1 && n <= 10)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         /// <summary>
