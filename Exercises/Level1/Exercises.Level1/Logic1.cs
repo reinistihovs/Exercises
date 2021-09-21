@@ -212,10 +212,8 @@ namespace Exercises.Level1
             {
                 return true;
             }
-            else
-            {
-                return false;
-            }
+            return false;
+
         }
 
         /// <summary>
@@ -228,7 +226,13 @@ namespace Exercises.Level1
         /// </summary>
         public bool SpecialEleven(int n)
         {
-            throw new NotImplementedException();
+            if (n % 11 == 0 || n % 11 == 1)
+            {
+                return true;
+            }
+
+            return false;
+
         }
 
         /// <summary>
@@ -241,7 +245,11 @@ namespace Exercises.Level1
         /// </summary>
         public bool More20(int n)
         {
-            throw new NotImplementedException();
+            if ( n % 20 == 1 || n % 20 == 2)
+            {
+                return true;
+            }
+            return false;
         }
 
         /// <summary>
